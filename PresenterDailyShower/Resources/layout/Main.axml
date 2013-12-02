@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/llList"
+        android:layout_weight="3">
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lvList" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/llDetail"
+        android:layout_weight="1">
+        <ScrollView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrDetail">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/SecondNameLabel"
+                    android:text="Фамилия:"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/SecondNameLabel"
+                    android:padding="5dp"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/FirstNameLabel"
+                    android:text="Имя:"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/SecondNameLabel"
+                    android:padding="5dp"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/ThirdNameLabel"
+                    android:text="Отчество:"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/FirstNameLabel"
+                    android:padding="5dp"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/TelLabel"
+                    android:text="Телефон:"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ThirdNameLabel"
+                    android:padding="5dp"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/EmailLabel"
+                    android:text="E-mail:"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TelLabel"
+                    android:padding="5dp"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/SpecialityLabel"
+                    android:text="Специальность:"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/EmailLabel"
+                    android:padding="5dp"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/PositionLabel"
+                    android:text="Должность:"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/SpecialityLabel"
+                    android:padding="5dp"
+                    android:textSize="20dp" />
+                <TextView
+                    android:text="Поликлиника:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/HospitalLabel"
+                    android:padding="5dp"
+                    android:textSize="20dp" />
+                <TextView
+                    android:text="Презентация:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/PresentLabel"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="20dp"
+                    android:visibility="invisible" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spnPresents"
+                    android:padding="5dp"
+                    android:visibility="invisible" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnShow"
+                    android:text="Начать показ"
+                    android:textSize="20dp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
